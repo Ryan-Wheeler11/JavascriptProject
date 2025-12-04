@@ -1,5 +1,5 @@
 import { createHmac } from 'node:crypto';
-import jwt from 'jsonwebtoken'; // <--- THIS WAS MISSING IN THE STARTER CODE
+import jwt from 'jsonwebtoken'; 
 
 const DEFAULT_HEADER = {
   'content-type': 'application/json',
@@ -8,7 +8,6 @@ const DEFAULT_HEADER = {
   'Access-Control-Allow-Methods': 'GET,POST,PUT,DELETE,OPTIONS',
 };
 
-// [NOTE] This must match the secret in authService.js
 const JWT_SECRET = 'thisismysecret';
 
 function base64UrlEncode(str) {

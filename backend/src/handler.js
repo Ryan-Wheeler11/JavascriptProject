@@ -16,7 +16,7 @@ const allRoutes = {
 function handler(request, response) {
   const { url, method } = request;
 
-  // Handle preflight
+
   if (method === "OPTIONS") {
     response.writeHead(204, DEFAULT_HEADER);
     return response.end();
